@@ -1,0 +1,37 @@
+header{
+  display:flex;
+  background:purple;
+  height:50px;
+  position:fixed;
+  padding: 10px 90px;
+  top:0;
+  width:100%;
+}
+a{
+  display:block;
+  height:30px;
+  background:cyan;
+  width:100px;
+  margin:10px;
+}
+.big_one {
+  width:150px;
+}
+div {
+  display:flex;
+  height:500px;
+  margin:80px 100px 10px;
+}
+main{
+  background:yellow;
+  flex-grow:3;
+}
+section {
+  background:lime;
+  flex-grow:1;
+}
+footer {
+  height:80px;
+  background:lightgray;
+  margin:0px 100px;
+}

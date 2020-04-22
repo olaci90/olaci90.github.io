@@ -1,0 +1,23 @@
+form{
+  text-transform:uppercase;
+  font-family:'Baloo Thambi 2', sans-serif;
+}
+input, button{
+  border-radius:5px;
+  border:2px solid #60E858;
+  margin-bottom:10px;
+  font-size:16px;
+  padding:10px;
+}
+button{
+  text-transform:uppercase;
+  background:#60E858;
+  border-radius:30px;
+  font-family:'Baloo Thambi 2', sans-serif;
+}
+label, input  {
+  display:block;
+}
+button:hover{
+  background:green;
+}

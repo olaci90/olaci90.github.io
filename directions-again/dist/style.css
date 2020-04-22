@@ -1,0 +1,36 @@
+main{
+ /* border:5px solid #4285f4;*/
+  Width:200px;
+  /*  margin-bottom: 5px;*/
+  
+}
+.north_nagy {
+  border:5px solid #4285f4;
+    margin-bottom:5px;
+}
+.south_nagy {
+  border:5px solid #4285f4;
+  /*margin-top:5px;*/
+}
+p {
+  color:white;
+  text-align:center;
+  font-weight:bold;
+  font-family:'Baloo Thambi 2', serif;
+  font-size:24px;
+  margin:0px;
+  padding:20px;
+}
+
+.north{
+  background-color:#E67676;
+}
+.east{
+  background-color:#F2F062;
+}
+.south{
+  background-color:#A9E6E6;
+}
+.west{
+  background-color:#7692E4;
+}

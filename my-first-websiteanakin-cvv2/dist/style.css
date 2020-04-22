@@ -1,0 +1,155 @@
+main {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+/*#top {
+  position:fixed;*/
+}
+nav ul {
+  list-style-type: none;
+  padding:0;
+  margin:0;
+  
+}
+nav li {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size:40px;
+  padding:10px;
+  margin:2px;
+  /*border:2px solid green;*/
+  align-content:center;
+  display: inline-block;
+}
+nav li:hover {
+  color:grey;
+}
+nav li:active{
+  color:green;
+}
+nav {
+    width:800px;
+    background:black;
+    color:white;
+    display:flex;
+    justify-content:space-around;
+  padding:0;
+  margin:0;
+  }
+nav a {
+  text-decoration:none;
+  color:white;
+}
+nav a:visited {
+  text-decoration:none;
+  color:none;
+}
+
+nav a:hover {
+  color:grey;
+}
+header {
+ position:relative;
+ width:800px;
+ height:auto;
+ border-top:5px solid black;
+}
+.header_text{
+  font-family: 'Abril Fatface', cursive;
+  color:#222;
+  font-size:35px;
+  position:absolute;
+  width:800px;
+  line-height:50px;
+  bottom:20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+
+}
+header span {
+  font-size:80px;
+}
+#header_img {
+  width:100%;
+  max-width:1278px;
+}
+blockquote::before {
+  content: '\201C';
+  font-family: 'Abril Fatface',
+    cursive;
+  font-size:130px;
+  position:absolute;
+  left:0px;
+  top:15px;
+}
+blockquote {
+  font-family: 'Abril Fatface', cursive;
+  color:white;
+  background-color:#444444;
+  width:40%;
+  font-size:50px;
+  position:relative;
+  padding:40px 40px 40px 80px;
+  line-height: 1.5em;
+  border:0;
+  margin:0;
+}
+article li  {
+  list-style-type:square;
+  margin-bottom:5px;
+}
+
+.abstract {
+  font-family: 'Josefin Sans', sans-serif;
+  line-height:150%;
+  font-weight:300;
+  color:#222;
+  font-size:1.1em;
+}
+h1  {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+h2  {
+  font-size:20px;
+  line-height:200%;
+  margin-bottom:0px;
+}
+h3  {
+  font-family: 'Merriweather', serif;
+  font-size:15px;
+  font-style:italic;
+  margin-top:0px;
+}
+#hline {
+  background-color:#222;
+  height:4px;
+  width:100%
+ 
+}
+article {
+  width: 800px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#redesign {
+  width: 800px;
+  font-family: 'Josefin Sans', sans-serif;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+section {
+  width:40%;
+ /* margin-left:auto;
+  margin-right:auto;*/
+  font-family: 'Josefin Sans', sans-serif;
+  color:#222;
+  padding-left:30px;
+}
+#bio {
+  width:800px;
+}

@@ -1,0 +1,17 @@
+main{
+  font-family:'Sen',sans-serif;
+}
+img{
+  width:150px;
+}
+div{
+  display:flex;
+}
+section{
+  width:200px;
+  text-align:center;
+}
+a{
+  display:block;
+  color:blue;
+}
