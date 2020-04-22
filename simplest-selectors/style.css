@@ -1,0 +1,25 @@
+.container {
+    width:200px;
+}
+.big {
+    color: blue;
+}
+#b325, .b326 { /* or .conatiner */
+     border:1px solid green;
+ }
+ div.asteroid {
+     font-weight: bold;
+ }
+ p.asteroid {
+     background-color: yellow;
+ }
+
+ .box {
+     border:2px solid black;
+     margin:none;
+     width:150px;
+     height:50px;
+ }
+ .box:hover {
+     background-color: green;
+ }
