@@ -3,37 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>olaci90</title>
+    <title>Todo list</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
-    <p>Solutions</p>
-    <ul>
-        <li><a href="simplest-selectors/">Simplest selectors</a></li>
-        <li><a href="boxes/dist/index.html">Boxes solution</a></li>
-        <li><a href="a-typical-webpage/dist/index.html">A typical webpage solution</a></li>
-        <li><a href="arranging-4-boxes/dist/index.html">4 box Solution</a></li>
-        <li><a href="all-together/dist/index.html">All together</a></li>
-        <li><a href="directions/dist/">Directions</a></li>
-        <li><a href="complicated-form/dist/">Complicated form</a></li>
-        <li><a href="my-first-websiteanakin-cv/dist/">Anakin</a></li>
-        <li><a href="my-first-websiteanakin-cvv2/dist/">Anakin2</a></li>
-        <li>...</li>
-</ul>
-
-<button id="click">CLICKMEBUTTON</button><br>
-<button id="change">Change CLICKBUTTON</button><br>
-<button id="color">Color</button>
-
-<input type="text" name="color" id="txtColor" value='blue'>
-
-<div id="clickCount">
-    <h1>Counter</h1>
-    <h2></h2>
-    <button id="increase">Increase</button>
+<div class="todoList">
+    <h1>Todo List v2.0</h1>
+    <h2>Todos</h2>
+    <div class="add">
+        <input type="text" name="toDoAdd" id="txtToAdd">
+        <button id="btnAdd">Add</button>
+    </div>  
+        <ul>
+        <!--
+            Todo list items will come here
+        -->
+        </ul>
 </div>
-<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script type = "text/javascript" src="./script.js"></script>
-
 </body>
+
 </html>

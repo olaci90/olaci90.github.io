@@ -1,3 +1,83 @@
-a {
-    color:green;
-}   
+body{
+    background-color: rgb(31, 219, 157);
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.todoList{
+    margin-top: 50px;
+    width:20%;
+    min-height:300px;
+    background-color: rgb(241, 236, 236);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:none;
+}
+ul {
+    list-style-type: none;
+    padding-left:0px;
+
+}
+.completed {
+    text-decoration: line-through;
+}
+
+h1, h2, ul {
+    margin:none;
+    /*border:2px solid black;*/
+    width:80%;
+    text-align: center;
+}
+.add {
+    margin:none;
+    height:30px;
+    width:80%;
+    border:2px solid grey;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.add button {
+    margin:none;
+    width:25%;
+    border:none;
+    background-color: magenta; 
+    font-size: 25px;
+    color: white;
+}
+.add input {
+    margin:none;
+    width:75%;
+    border:none;
+}
+
+.liButtons {
+    display:flex;
+    flex-direction: row;
+    /*border:1px solid red;*/
+    width:25%;
+    justify-content: center;
+}
+.liButtons img {
+    width:25px;
+    height:25px;
+    /*border:2px solid black;*/
+    margin:2px;
+}
+
+li {
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+   /* border:1px solid green;*/
+}
+
+.li_text {
+   /* border:1px solid orange;*/
+    width:75%;
+    text-align: left;
+}
