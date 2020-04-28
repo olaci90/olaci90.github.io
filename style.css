@@ -1,83 +1,61 @@
-body{
-    background-color: rgb(31, 219, 157);
-    font-family: 'Titillium Web', sans-serif;
+
+* {
+    box-sizing: border-box;
+  }
+body {
+    background-image: radial-gradient(circle, #ffffff, #ededed, #dadada, #c9c9c9, #b7b7b7);
     display: flex;
     justify-content: center;
-}
-.todoList{
-    margin-top: 50px;
-    width:20%;
-    min-height:300px;
-    background-color: rgb(241, 236, 236);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    padding:none;
 }
-ul {
-    list-style-type: none;
-    padding-left:0px;
-
-}
-.completed {
-    text-decoration: line-through;
+div {
+    border:2px solid black;
 }
 
-h1, h2, ul {
-    margin:none;
-    /*border:2px solid black;*/
-    width:80%;
-    text-align: center;
-}
-.add {
-    margin:none;
-    height:30px;
-    width:80%;
-    border:2px solid grey;
-    border-radius: 3px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.add button {
-    margin:none;
-    width:25%;
-    border:none;
-    background-color: magenta; 
-    font-size: 25px;
-    color: white;
-}
-.add input {
-    margin:none;
-    width:75%;
-    border:none;
-}
-
-.liButtons {
+.viewer_container {
+    margin-top:200px;
+    width: 45%;
+    height: 500px;
+    border:2px solid green;
     display:flex;
-    flex-direction: row;
-    /*border:1px solid red;*/
-    width:25%;
-    justify-content: center;
-}
-.liButtons img {
-    width:25px;
-    height:25px;
-    /*border:2px solid black;*/
-    margin:2px;
 }
 
-li {
-    display: flex;
+.nav {
+    width:10%;
+    height:100%;
+}
+.image_container {
+    width:80%;
+    height:100%;
+    border:1px solid blue;
+    position:relative;
+}
+.description {
     width:100%;
-    flex-direction: row;
-    justify-content: space-evenly;
-   /* border:1px solid green;*/
+    height:25%;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    background-color: rgba(00, 00, 00, 0.85);
+    color:white;
 }
 
-.li_text {
-   /* border:1px solid orange;*/
-    width:75%;
-    text-align: left;
+img {
+    height:100%;
+    width:auto;
+    max-width:100%;
+}
+
+.nav {
+    background-color: rgb(199, 199, 199, 1);
+}
+ #nav_right img{
+    transform: rotate(0.5turn) scale(0.5);
+ }
+
+ .nav:hover {
+    opacity:0.5;
+ }
+#nav_left img {
+    transform: scale(0.5);
 }
