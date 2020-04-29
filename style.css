@@ -55,6 +55,7 @@ body {
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
+    cursor:pointer;
     
 }
  #nav_right img{
@@ -73,4 +74,5 @@ body {
     display: flex;
     justify-content: center;
     opacity:0.1;
+    pointer-events: none;
 }

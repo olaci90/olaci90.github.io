@@ -52,17 +52,20 @@ let loadPhoto = (photoNumber) => {
     $('#photo-title').text(photo_data[photoNumber].title);
     $('#photo').attr('src', photo_data[photoNumber].photo);
     $('#photo-description').text(photo_data[photoNumber].description);
-   /* if (photoNumber===photo_data.length-1) {
-        $('#nav_right').toggleClass('nav_last');
-    } else {
-        
-    }*/ //utolsónál szürküljön ki a nyíl ez még nem jó
 }
 let currentPhoto = 0;
+$('#nav_left').addClass('nav_last');
 loadPhoto(currentPhoto);
 $('#nav_right').click(() => {
     if (currentPhoto < photo_data.length-1) {
         currentPhoto++;
+        if (currentPhoto===photo_data.length-1) {
+            $('#nav_right').addClass('nav_last');}
+
+        if (currentPhoto > 0) {
+                $('#nav_left').removeClass('nav_last');
+        }
+
     } 
     loadPhoto(currentPhoto);
 });
@@ -71,6 +74,12 @@ $('#nav_right').click(() => {
 $('#nav_left').click(() => {
     if (currentPhoto > 0) {
         currentPhoto--;
+        if (currentPhoto < photo_data.length-1) {
+                $('#nav_right').removeClass('nav_last');
+        } 
+        if (currentPhoto===0) {
+            $('#nav_left').addClass('nav_last');}
+        
     } 
     loadPhoto(currentPhoto);
 });
