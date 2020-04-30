@@ -83,3 +83,20 @@ $('#nav_left').click(() => {
     } 
     loadPhoto(currentPhoto);
 });
+
+//creating thumbnails
+
+photo_data.forEach((item, index) => {
+    $('#thumbnails').append('<div class="thumbnail-pic-box" data-index="'+ index +'"><img src='+ item.photo + ' class="thumbnail-pic" alt=""></div>');
+});
+
+$('.thumbnail-pic-box').click((event) => {
+    let indexClicked = $(event.target).attr('data-index');
+    let numberIndex = parseInt(indexClicked);
+    console.log(numberIndex);
+    /*loadPhoto(numberIndex);*/
+  });
+
+
+
+
