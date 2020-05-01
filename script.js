@@ -3,19 +3,19 @@ let photo_data = [
     {
     photo: './images/pic1.jpg',
     title: 'Title of the first image',
-    description: 'This is a nice image. Szöveg Mauris diam ante, posuere quis eros tempus, hendrerit accumsan lacus. Mauris tincidunt dapibus nisi, ut finibus ligula ultrices ut. Donec hendrerit ante nec lorem rhoncus porta. Suspendisse lacinia nunc in tellus accumsan dapibus. Pellentesque eu pulvinar nibh, accumsan tempus ante. Praesent at laoreet erat'
-},
+    description: 'This is a nice image. Szöveg Mauris diam ante, posuere quis eros tempus'
+    },
 
 {
     photo: './images/pic2.jpg',
     title: 'Title of image2',
-    description: 'This is a nice image. Szöveg Mauris diam ante, posuere quis eros tempus, hendrerit accumsan lacus.'
+    description: 'This is a nice image. Szöveg Mauris diam ante, posuere quis eros tempus'
 },
 
 {
     photo: './images/pic3.jpg',
     title: 'Title of image3',
-    description: 'This is a nice image. Szöveg Mauris diam ante, posuere quis eros tempus, hendrerit accumsan lacus.'
+    description: 'This is a nice image. Szöveg Mauris diam ante, posuere quis ero'
 },
 
 {
@@ -26,25 +26,20 @@ let photo_data = [
 {
     photo: './images/pic5.jpg',
     title: 'Title of image5',
-    description: 'This is a nice image. Szöveg Mauris diam ante, posuere quis eros tempus, hendrerit accumsan lacus.'
+    description: 'This is a nice image. Szöveg Mauris diam ante, posuere'
 },
 {
     photo: './images/pic6.jpg',
     title: 'Title of image6',
-    description: 'This is a nice image. Szöveg Mauris diam ante, posuere quis eros tempus, hendrerit accumsan lacus.'
+    description: 'This is a nice image. Szöveg Mauris diam ante, posuere quis eros tempus, hendrerit a'
 },
 {
     photo: './images/pic7.jpg',
     title: 'Title of image7',
-    description: 'This is a nice image. Szöveg Mauris diam ante, posuere quis eros tempus, hendrerit accumsan lacus.'
+    description: 'This is a nice image. Szöveg Mauris diam ante, '
 }
 ];
 
-/*function c_photo_data(photo, title, description) { /Ez mlg nme kell
-    this.photo = photo;
-    this.title = title;
-    this.description = description;
-}*/
 
 //load photo to the image slider
 
@@ -87,14 +82,13 @@ $('#nav_left').click(() => {
 //creating thumbnails
 
 photo_data.forEach((item, index) => {
-    $('#thumbnails').append('<div class="thumbnail-pic-box" data-index="'+ index +'"><img src='+ item.photo + ' class="thumbnail-pic" alt=""></div>');
+    $('#thumbnails').append(`<div class="thumbnail-pic-box" data-index="${index}"><img src="${item.photo}" class="thumbnail-pic" alt=""></div>`);
 });
 
-$('.thumbnail-pic-box').click((event) => {
-    let indexClicked = $(event.target).attr('data-index');
+$('.thumbnail-pic-box').click(function(event) {
+    let indexClicked = $(event.target).closest('div').attr('data-index');
     let numberIndex = parseInt(indexClicked);
-    console.log(numberIndex);
-    /*loadPhoto(numberIndex);*/
+    loadPhoto(numberIndex);
   });
 
 
