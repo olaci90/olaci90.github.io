@@ -89,6 +89,7 @@ body {
     margin-top:25px;
     display:flex;
     flex-direction: row;
+    position: relative;
 }
 
 .thumbnail-pic-box {
@@ -100,22 +101,70 @@ body {
     align-items: center;
     margin-right: 10px;
     box-shadow: 0px 15px 10px -15px #111;
+    z-index: 2;
+    cursor:pointer;
+    opacity: 0.7;
 }
 
 .thumbnail-pic {
     width:90px;
     height:90px;
     object-fit: cover;
+    z-index: 3;
 }
 
 .thumbnail-pic-box_selected {
-    width:100px;
-    height:100px;
-    background-color: #ffffff;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    box-shadow: 0px 20px 10px -15px #111;
+     box-shadow: 0px 20px 10px -15px #111;
+     display: flex;
+     opacity: 1;
+     transform: scale(1.15);
 }
 
+
+.thumb-title {
+    display: none;
+    position: absolute;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    top: -42px;
+    width:120px;
+    z-index: 4;
+  }
+  
+  .thumbnail-pic-box:hover .thumb-title {
+    display: flex;
+  }
+.selected_mark {
+    width:10px;
+    height:10px;
+    background-color: #ffffff;
+    position: absolute;
+    top:-5px;
+    transform: rotate(45deg);
+    z-index: 1;
+    display: none;
+}
+
+.thumbnail-pic-box_selected .selected_mark {
+    display: flex;
+}
+
+.mark {
+    width:10px;
+    height:10px;
+    background-color: black;
+    position: absolute;
+    bottom:-5px;
+    left:55px;
+    transform: rotate(45deg);
+    z-index: 4;
+    
+}
+
+.thumbnail-pic-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 20px 10px -15px #111;
+    opacity: 1;
+}
