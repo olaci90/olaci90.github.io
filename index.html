@@ -3,26 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mCPC</title>
     <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <title>Image Slider</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 <body>
-    <div class="viewer_container">
-        <div class="nav" id="nav_left"><img src="./icons/arrow.svg" alt=""></div>
-        <div class="image_container">
-            <img id="photo">
-            <div class="description">
-                <h1 id="photo-title"></h1>
-                <p id="photo-description"></p></div>
-        </div>
-        <div class="nav" id="nav_right"><img src="./icons/arrow.svg" alt=""></div>
-    </div>
 
-    <div id="thumbnails">
-    <!-- <div class="thumbnail-pic-box"><img class="thumbnail-pic" src="./images/pic4.jpg" alt=""></div>
-        <div class="thumbnail-pic-box"><img class="thumbnail-pic" src="./images/pic5.jpg" alt=""></div>-->
-    </div>
-    <script type = "text/javascript" src="./script.js"></script>
+    <form class="parameters" action="submit">
+        <fieldset id="settings">
+          <fieldset>
+            <legend>Instrument parameters</legend>
+            <label for="colVol">Column Volume (Vc)</label>
+            <input type="number" name="instparams" id="colVol" min="100" max="25000" step="10" value=2250>
+            <label for="colVol">mL</label>
+            <label for="SF">Stationary phase retention factor (SF)</label>
+            <input type="number" name="instparams" id="SF" min="0" max="100" step="5" value=90>
+            <label for="SF">%</label>
+            <label for="F">Flow rate (F)</label>
+            <input type="number" name="instparam" id="F" step="10" min="10" max="3000" value=150>
+            <label for="F">mL/min</label>
+            <label for="mode">Mode</label>
+            <select name="mode" id="mode">
+              <option value="asc">Ascending</option>
+              <option value="dsc" selected="selected">Descending</option>
+            </select>
+          </fieldset>
+          <input type="button" value="Add Compound" id="btnAdd">
+          <input type="button" value="Calculate" id="btnCalc">
+          <fieldset>
+            <legend>Compound 1</legend> 
+            <label for="c1">Name:</label>
+            <input type="text" name="compounds" id="c1" value="compound1">
+            <label for="kd1">Kd</label>
+            <input type="number" name="KD" id="kd1" min="0" max="10" step="0.1">
+            <label for="conc1">c</label>
+            <input type="number" name="concentration" id="conc1" min="0" max="" value ="1000">
+          </fieldset>
+        </fieldset>
+      </form>
+
+     
+      
+     
+<script type = "text/javascript" src="./script.js"></script>
 </body>
+
 </html>
