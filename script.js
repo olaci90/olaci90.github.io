@@ -178,7 +178,8 @@ function draw(calcdata,labelarray,curves) {
                     .attr("transform",function (d,i){ return "translate(0,0)";})
                     .attr("class","g_labels")
                     .attr("id", function (d,i){return "g_label_"+i})
-                    .style("opacity","100%");
+                    .style("opacity","100%")
+                    .style("text-anchor", "middle");
 
 
 
